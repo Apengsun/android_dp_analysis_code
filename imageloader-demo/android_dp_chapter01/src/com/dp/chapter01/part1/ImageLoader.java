@@ -12,7 +12,7 @@
  *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -44,7 +44,8 @@ public class ImageLoader {
     // 线程池,线程数量为CPU的数量
     ExecutorService mExecutorService = Executors.newFixedThreadPool(Runtime.getRuntime()
             .availableProcessors());
-    private Handler mUiHandler = new Handler() ;
+    // UI Handler
+    private Handler mUiHandler = new Handler();
 
     public ImageLoader() {
         initImageCache();
@@ -63,16 +64,17 @@ public class ImageLoader {
             }
         };
     }
-    
+
     private void updateImageView(final ImageView imageView, final Bitmap bitmap) {
-		mUiHandler.post(new Runnable() {
-			
-			@Override
-			public void run() {
-				 imageView.setImageBitmap(bitmap); ;				
-			}
-		});
-	}
+        mUiHandler.post(new Runnable() {
+
+            @Override
+            public void run() {
+                imageView.setImageBitmap(bitmap);
+                ;
+            }
+        });
+    }
 
     public void displayImage(final String url, final ImageView imageView) {
         imageView.setTag(url);
@@ -85,7 +87,7 @@ public class ImageLoader {
                     return;
                 }
                 if (imageView.getTag().equals(url)) {
-                	updateImageView(imageView, bitmap) ;
+                    updateImageView(imageView, bitmap);
                 }
                 mImageCache.put(url, bitmap);
             }

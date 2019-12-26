@@ -12,7 +12,7 @@
  *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -24,15 +24,15 @@
 
 package com.dp.chapter01.part2.refactor.cache;
 
-import com.dp.chapter01.part2.refactor.ImageLoader;
-
 import android.graphics.Bitmap;
 import android.test.AndroidTestCase;
 import android.widget.ImageView;
 
+import com.dp.chapter01.part2.refactor.ImageLoader;
+
 public class CacheTest extends AndroidTestCase {
 
-    
+
     public static void main(String[] args) {
         ImageLoader imageLoader = new ImageLoader() ;
         // 使用内存缓存
@@ -43,19 +43,19 @@ public class CacheTest extends AndroidTestCase {
         imageLoader.setImageCache(new DoubleCache());
         // 使用自定义的图片缓存实现
         imageLoader.setImageCache(new ImageCache() {
-            
+
             @Override
             public void put(String url, Bitmap bmp) {
                 // 缓存图片
             }
-            
+
             @Override
             public Bitmap get(String url) {
                 return null /*从自定义的缓存实现中获取图片*/;
             }
         });
     }
-    
+
     protected void setUp() throws Exception {
         super.setUp();
 

@@ -24,10 +24,10 @@
 
 package com.dp.chapter01.part6.refactor;
 
+import com.dp.chapter01.part6.Room;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.dp.chapter01.part6.Room;
 
 /**
  * 中介

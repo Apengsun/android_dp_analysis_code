@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Android API 28 Platform"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="output" path="bin/classes"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/android-support-v4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/libs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/android-support-v41"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/android-support-v42"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/appcompat_v7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/android_dp-v7-appcompat"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/appcompat_v7-159586c37f03375541b23bfdacc0405d"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dexedLibs"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

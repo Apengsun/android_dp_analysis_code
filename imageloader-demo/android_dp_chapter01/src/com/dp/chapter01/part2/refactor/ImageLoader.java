@@ -29,13 +29,13 @@ import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.widget.ImageView;
 
+import com.dp.chapter01.part2.refactor.cache.ImageCache;
+import com.dp.chapter01.part2.refactor.cache.MemoryCache;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import com.dp.chapter01.part2.refactor.cache.ImageCache;
-import com.dp.chapter01.part2.refactor.cache.MemoryCache;
 
 /**
  * 图片加载类

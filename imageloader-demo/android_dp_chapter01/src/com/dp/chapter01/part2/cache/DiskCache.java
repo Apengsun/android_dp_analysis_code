@@ -28,11 +28,10 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 
+import com.dp.chapter01.part5.utils.CloseUtils;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
-
-import com.dp.chapter01.part5.utils.CloseUtils;
 
 public class DiskCache {
     static String cacheDir = "sdcard/cache/";

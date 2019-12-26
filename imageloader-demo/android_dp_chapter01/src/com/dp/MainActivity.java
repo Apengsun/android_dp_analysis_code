@@ -1,10 +1,10 @@
 
 package com.dp;
 
-import com.android.dp.book.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.android.dp.book.R;
 
 public class MainActivity extends Activity {
 
