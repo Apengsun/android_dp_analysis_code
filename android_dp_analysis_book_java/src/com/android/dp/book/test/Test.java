@@ -24,7 +24,31 @@
 
 package com.android.dp.book.test;
 
+import java.util.ArrayList;
+
 public class Test {
+//    public static void main(String[] args) {
+//        ResFinder.put(new ResItem(ResType.COLOR, "color1"), 123);
+//        ResFinder.put(new ResItem(ResType.COLOR, "color1"), 123);
+//        ResFinder.put(new ResItem(ResType.COLOR, "color2"), 222);
+//        ResFinder.put(new ResItem(ResType.COLOR, "color3"), 333);
+//        System.out.println("size : " + ResFinder.mResourcesCache.size());
+//
+//        int resId = ResFinder.getResourceId(ResType.COLOR, "color1");
+//        System.out.println(" color = " + resId);
+//    }
+//public static void main(String[] args) {
+//    // TODO Auto-generated method stub
+//    int temvalue = 0;
+//    AtomicInteger i = new AtomicInteger(0);
+//    temvalue = i.getAndSet(3);
+//    System.out.println("temvalue:" + temvalue + ";  i:" + i);//temvalue:0;  i:3
+//    temvalue = i.getAndIncrement();
+//    System.out.println("temvalue:" + temvalue + ";  i:" + i);//temvalue:3;  i:4
+//    temvalue = i.getAndAdd(5);
+//    System.out.println("temvalue:" + temvalue + ";  i:" + i);//temvalue:4;  i:9
+//}
+//}
     public static void main(String[] args) {
         //        ResFinder.put(new ResItem(ResType.COLOR, "color1"), 123);
         //        ResFinder.put(new ResItem(ResType.COLOR, "color1"), 123);
@@ -52,21 +76,21 @@ public class Test {
         //            System.out.println(" node = " + node.value);
         //        }
         ArrayList test=selfDividing(1, 22);
-        for (int i = 0; i < ; i++) {
-
+        for (int i = 0; i <test.size() ; i++) {
+            System.out.print(test.get(i)+" ");
         }
     }
 
     public static Node reserve(Node node) {
         if (node == null) {
-            return;
+            return node;
         }
 
-        Node head;
-        Node cur;
-        boolean isEnd;
+        Node head=null;
+        Node cur=null;
+        boolean isEnd = false;
         op(node, isEnd, head, cur);
-        return head
+        return head;
 
     }
 
@@ -85,13 +109,13 @@ public class Test {
         }
     }
 
-    public static ArrayList<int> selfDividing(int left, int right) {
-        ArrayList<Intger> result = new ArrayList<int>();
+    public static ArrayList<Integer> selfDividing(int left, int right) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
 
         for (int i = left; i <= right; i++) {
             int b = 0;
             for (b = i; b > 0; b = b / 10) {
-                if (b % 10 == 0 || i % (n % 10) != 0)
+                if (b % 10 == 0 || i % (b % 10) != 0)
                     break;
             }
             if (b == 0)
